@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image8Ball"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/ball5" />
+
+    <TextView
+        android:id="@+id/textBackgroundLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="true"
+        android:background="@color/colorLayoutBackgroundText"
+        android:gravity="center"
+        android:text="@string/backgroundLayout"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/buttonAsk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorButton"
+        android:text="@string/askButton"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
 </RelativeLayout>
